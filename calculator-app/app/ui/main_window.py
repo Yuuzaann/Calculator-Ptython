@@ -70,13 +70,18 @@ class MainWindow(QMainWindow):
         root_layout.setContentsMargins(0, 0, 0, 0)
         root_layout.setSpacing(0)
 
+        # ---- History sidebar (right side) — created first so toolbar can reference it ----
+        self._sidebar = HistorySidebar()
+        self._sidebar.entry_selected.connect(self._on_history_selected)
+        self._sidebar.clear_requested.connect(self._on_clear_history)
+
         # ---- Main panel (left side) ----
         main_panel = QWidget()
         main_layout = QVBoxLayout(main_panel)
         main_layout.setContentsMargins(16, 12, 16, 16)
         main_layout.setSpacing(10)
 
-        # Toolbar
+        # Toolbar (needs _sidebar already created)
         toolbar = self._build_toolbar()
         main_layout.addLayout(toolbar)
 
@@ -97,11 +102,6 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self._tabs, 1)
 
         root_layout.addWidget(main_panel, 1)
-
-        # ---- History sidebar (right side) ----
-        self._sidebar = HistorySidebar()
-        self._sidebar.entry_selected.connect(self._on_history_selected)
-        self._sidebar.clear_requested.connect(self._on_clear_history)
         root_layout.addWidget(self._sidebar, 0)
 
     def _build_toolbar(self) -> QHBoxLayout:
