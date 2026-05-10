@@ -1,0 +1,290 @@
+Bertindak sebagai Senior Python Software Engineer dan UI Desktop Architect.
+
+Tugasmu adalah membuat aplikasi Calculator Desktop modern dan professional menggunakan Python dengan code production-ready, clean architecture, scalable, aman, dan mudah di-maintain.
+
+====================================================
+# OBJECTIVE
+====================================================
+
+Buat aplikasi calculator desktop modern dengan:
+- Basic Calculator
+- Scientific Calculator
+- History System
+- Theme System
+- Keyboard Shortcut
+- Modern UI/UX
+- Clean Architecture
+- Secure Expression Parser
+- Packaging support (.exe)
+
+Aplikasi harus terlihat seperti software desktop premium modern, bukan project beginner.
+
+====================================================
+# TECH STACK
+====================================================
+
+Gunakan:
+- Python 3.12+
+- PyQt6
+- Qt StyleSheet (QSS)
+- MVC / modular architecture
+- Type hints
+- JSON local storage
+- PyInstaller
+
+DILARANG:
+- Jangan gunakan eval() mentah tanpa sanitasi
+- Jangan menaruh semua code dalam 1 file
+- Jangan membuat UI jadul default PyQt
+- Jangan hardcode logic di UI
+
+====================================================
+# MAIN FEATURES
+====================================================
+
+## BASIC CALCULATOR
+Support:
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Modulus (%)
+- Decimal
+- Negative number
+- Clear (C)
+- Backspace (⌫)
+- Parentheses
+- Real-time display update
+
+====================================================
+# SCIENTIFIC CALCULATOR
+====================================================
+
+Tambahkan:
+- sin()
+- cos()
+- tan()
+- log()
+- ln()
+- sqrt()
+- x²
+- xʸ
+- factorial
+- π
+- e
+- absolute()
+- reciprocal (1/x)
+
+====================================================
+# MEMORY FEATURES
+====================================================
+
+Implementasikan:
+- M+
+- M-
+- MR
+- MC
+
+====================================================
+# HISTORY SYSTEM
+====================================================
+
+Buat history system:
+- Menyimpan semua perhitungan
+- Auto-save ke JSON
+- Sidebar history collapsible
+- Klik history untuk reuse expression
+- Clear history button
+- Timestamp history
+
+====================================================
+# UI / UX REQUIREMENTS
+====================================================
+
+Design HARUS modern dan premium.
+
+Gunakan:
+- Dark mode default
+- Light mode toggle
+- Rounded corners
+- Shadow effect
+- Hover animation
+- Press animation
+- Smooth transition
+- Grid layout clean
+- Responsive resize
+- Minimal modern typography
+- Modern calculator display
+- Sidebar history modern
+- Operator button dengan accent color
+- Icon modern
+- Splash screen startup
+
+Tampilan harus mirip:
+- Windows 11 modern apps
+- macOS utility apps
+- Premium calculator app
+
+====================================================
+# KEYBOARD SHORTCUT
+====================================================
+
+Support:
+- Enter = calculate
+- Esc = clear
+- Backspace = delete
+- Number keyboard support
+- Operator keyboard support
+
+====================================================
+# ERROR HANDLING
+====================================================
+
+Handle dengan aman:
+- Division by zero
+- Invalid syntax
+- Overflow
+- Empty input
+- Invalid expression
+
+Gunakan:
+- Custom validator
+- Safe parser
+- Try-catch yang proper
+
+====================================================
+# SECURITY
+====================================================
+
+JANGAN gunakan:
+- eval(expression)
+
+Gunakan:
+- safe expression parser
+- AST parser
+- math module whitelist
+- sanitization input
+
+====================================================
+# PROJECT STRUCTURE
+====================================================
+
+Gunakan struktur modular seperti ini:
+
+calculator-app/
+│
+├── main.py
+├── requirements.txt
+├── README.md
+│
+├── app/
+│   │
+│   ├── ui/
+│   │   ├── main_window.py
+│   │   ├── splash_screen.py
+│   │   ├── styles.qss
+│   │   └── components/
+│   │       ├── calculator_display.py
+│   │       ├── button_grid.py
+│   │       └── history_sidebar.py
+│   │
+│   ├── core/
+│   │   ├── calculator_engine.py
+│   │   ├── scientific_engine.py
+│   │   ├── expression_parser.py
+│   │   └── validator.py
+│   │
+│   ├── services/
+│   │   ├── history_service.py
+│   │   ├── memory_service.py
+│   │   └── theme_service.py
+│   │
+│   ├── utils/
+│   │   ├── formatter.py
+│   │   ├── constants.py
+│   │   └── helpers.py
+│   │
+│   └── assets/
+│       ├── icons/
+│       └── themes/
+│
+├── data/
+│   └── history.json
+│
+└── tests/
+    └── test_calculator_engine.py
+
+====================================================
+# CLEAN CODE REQUIREMENTS
+====================================================
+
+Pastikan:
+- SOLID principles
+- DRY principle
+- Modular code
+- Reusable component
+- Separation of concern
+- Type hints
+- Docstring
+- Consistent naming
+- Maintainable architecture
+
+====================================================
+# OUTPUT REQUIRED
+====================================================
+
+Berikan:
+1. Full source code
+2. Semua file project
+3. requirements.txt
+4. README.md
+5. Penjelasan arsitektur
+6. Cara install dependency
+7. Cara run aplikasi
+8. Cara build .exe menggunakan PyInstaller
+9. Unit testing sederhana
+10. Modern QSS styling
+11. Full working application
+
+====================================================
+# EXTRA FEATURES
+====================================================
+
+Tambahkan:
+- Splash screen loading
+- App icon custom
+- Copy result to clipboard
+- Auto formatting number
+- Window drag smooth
+- Calculator responsive
+- Animated sidebar
+- Theme persistence
+- Auto restore last session
+
+====================================================
+# PERFORMANCE
+====================================================
+
+Aplikasi harus:
+- Ringan
+- Cepat startup
+- Tidak memory leak
+- Efficient rendering
+- Smooth animation
+- Clean event handling
+
+====================================================
+# FINAL GOAL
+====================================================
+
+Hasil akhir harus terlihat seperti:
+- Professional desktop utility app
+- Production-ready software
+- Modern premium calculator
+- Clean architecture enterprise-grade
+
+Jangan membuat code setengah jadi.
+Jangan membuat UI default PyQt biasa.
+Jangan membuat struktur beginner-level.
+
+Buat aplikasi yang benar-benar siap dipamerkan ke portfolio professional developer.
