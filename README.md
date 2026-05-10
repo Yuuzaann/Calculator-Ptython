@@ -232,11 +232,7 @@ Hasil Aman ✅
 4. Push: `git push origin feature/nama-fitur`
 5. Buat Pull Request
 
----
 
-## 📄 Lisensi
-
-Proyek ini dilisensikan di bawah [MIT License](LICENSE).
 
 ---
 
